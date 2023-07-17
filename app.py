@@ -100,4 +100,4 @@ def calcular_ruta_optima():
     return jsonify(rutas_optimas)
 
 if __name__ == "__main__":
-    app.run()
+    app.run(debug = False, host = '0.0.0.0')
