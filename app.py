@@ -86,6 +86,10 @@ def vrp_voraz(coord, pedidos, almacen, max_carga):
 
     return rutas
 
+@app.route("/")
+def home():
+    return render_template('index.html')
+
 
 @app.route("/rutas_optimas", methods=['POST'])
 def calcular_ruta_optima():
